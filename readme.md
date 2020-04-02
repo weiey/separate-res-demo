@@ -1,11 +1,11 @@
-##分离lib,resources打包     
-###效果图    
+## 分离lib,resources打包     
+### 效果图    
 ![效果图](img/效果图1.png "效果图")   
-###运行脚本    
+### 运行脚本    
 ```java -jar -Dloader.path=resources,lib  demo.jar ```     
 [项目地址：github](https://github.com/weiey/separate-res-demo.git "地址")
 
-###修改pom.xml文件
+### 修改pom.xml文件
 ``` <!-- 分离lib -->
 <build>
          <finalName>${project.artifactId}</finalName>
@@ -118,7 +118,7 @@
          </plugins>
      </build>
 ```   
-#####其实把上面复制了，只需修改下<mainClass>com.example.demo.DemoApplication</mainClass>执行 clean   package 即可。         
+##### 其实把上面复制了，只需修改下<mainClass>com.example.demo.DemoApplication</mainClass>执行 clean   package 即可。         
 
 ![打包后](img/打包完成图.png)    
 将lib,resources,jar复制到同目录下，直接运行即可。     
